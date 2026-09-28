@@ -1,0 +1,107 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #cbd5e1;
+  --title: #f1f5f9;
+  --accent: #38bdf8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+/* 네비게이션 */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 40px;
+  background: rgba(15, 23, 42, 0.9);
+  z-index: 10;
+}
+.logo { font-weight: bold; font-size: 20px; }
+.nav nav a { margin-left: 24px; color: var(--title); }
+.nav nav a:hover { color: var(--accent); }
+.menu-btn { display: none; background: none; border: none; color: var(--title); font-size: 24px; }
+
+/* 공통 섹션 */
+main { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+section { padding: 100px 0; }
+.section-title { font-size: 28px; color: var(--title); margin-bottom: 32px; }
+.section-title span { color: var(--accent); font-size: 18px; margin-right: 8px; }
+h4 { color: var(--title); margin: 16px 0 8px; }
+
+/* 히어로 */
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+.hero h1 { font-size: 64px; color: var(--title); }
+.hero h2 { font-size: 32px; color: var(--accent); }
+.buttons { margin-top: 24px; display: flex; gap: 12px; }
+.btn {
+  display: inline-block; padding: 12px 24px;
+  background: var(--accent); color: var(--bg);
+  border-radius: 6px; font-weight: bold;
+}
+.btn-outline { background: none; border: 1px solid var(--accent); color: var(--accent); }
+
+/* About */
+.about { display: flex; gap: 32px; align-items: center; }
+.photo {
+  flex-shrink: 0; width: 200px; height: 200px;
+  background: var(--card); border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+.skills, .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.skills span { background: var(--card); padding: 6px 12px; border-radius: 6px; }
+
+/* Experience 탭 */
+.exp { display: flex; gap: 24px; }
+.tabs { display: flex; flex-direction: column; min-width: 150px; }
+.tab {
+  background: none; border: none; border-left: 2px solid var(--card);
+  color: var(--text); padding: 10px 16px; text-align: left; cursor: pointer;
+}
+.tab.active, .tab:hover { color: var(--accent); border-left-color: var(--accent); }
+.panel { display: none; }
+.panel.active { display: block; }
+.panel h4 { margin-top: 0; }
+.date { font-size: 14px; margin-bottom: 12px; }
+.panel ul { padding-left: 20px; }
+
+/* Projects 카드 */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.card { background: var(--card); padding: 24px; border-radius: 10px; transition: transform 0.2s; }
+.card:hover { transform: translateY(-5px); }
+.card-top { display: flex; justify-content: space-between; }
+.badge { font-size: 12px; color: var(--accent); }
+.tags span { font-size: 13px; color: var(--accent); }
+
+/* Contact & Footer */
+.contact { text-align: center; }
+.contact p { margin-bottom: 24px; }
+footer { text-align: center; padding: 24px; font-size: 14px; }
+
+/* 모바일 */
+@media (max-width: 700px) {
+  .nav { padding: 16px 20px; }
+  .menu-btn { display: block; }
+  .nav nav {
+    display: none; position: absolute; top: 60px; left: 0; right: 0;
+    background: var(--bg); flex-direction: column; padding: 16px;
+  }
+  .nav nav.open { display: flex; }
+  .nav nav a { margin: 8px 0; }
+  .hero h1 { font-size: 40px; }
+  .hero h2 { font-size: 22px; }
+  .about, .exp { flex-direction: column; }
+  .tabs { flex-direction: row; overflow-x: auto; }
+  .tab { border-left: none; border-bottom: 2px solid var(--card); }
+  .tab.active { border-bottom-color: var(--accent); }
+}

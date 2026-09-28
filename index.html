@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 상단 네비게이션 -->
+  <header class="nav">
+    <a href="#" class="logo">YN</a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 히어로 -->
+    <section class="hero">
+      <h1>Your Name</h1>
+      <h2>Your Title</h2>
+      <p>Current Role · School / Company</p>
+      <div class="buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#" class="btn btn-outline">Download Resume</a>
+      </div>
+    </section>
+
+    <!-- 01 About -->
+    <section id="about">
+      <h3 class="section-title"><span>01</span> About Me</h3>
+      <div class="about">
+        <div class="photo">Photo</div>
+        <div>
+          <p>A short introduction about yourself goes here.</p>
+          <p>Another sentence about your interests.</p>
+        </div>
+      </div>
+
+      <h4>Skills</h4>
+      <div class="skills">
+        <span>Skill 1</span>
+        <span>Skill 2</span>
+        <span>Skill 3</span>
+        <span>Skill 4</span>
+      </div>
+    </section>
+
+    <!-- 02 Experience (탭) -->
+    <section id="experience">
+      <h3 class="section-title"><span>02</span> Experience</h3>
+      <div class="exp">
+        <div class="tabs">
+          <button class="tab active" data-tab="0">Company A</button>
+          <button class="tab" data-tab="1">Company B</button>
+          <button class="tab" data-tab="2">Company C</button>
+        </div>
+        <div class="panels">
+          <div class="panel active">
+            <h4>Job Title @ <a href="#">Company A</a></h4>
+            <p class="date">Month Year — Present</p>
+            <ul>
+              <li>What you did / achieved.</li>
+              <li>What you did / achieved.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h4>Job Title @ <a href="#">Company B</a></h4>
+            <p class="date">Month Year — Month Year</p>
+            <ul>
+              <li>What you did / achieved.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h4>Job Title @ <a href="#">Company C</a></h4>
+            <p class="date">Month Year — Month Year</p>
+            <ul>
+              <li>What you did / achieved.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Projects -->
+    <section id="projects">
+      <h3 class="section-title"><span>03</span> Projects</h3>
+      <div class="cards">
+        <div class="card">
+          <div class="card-top"><span class="badge">Live</span><a href="#">↗</a></div>
+          <h4>Project Name</h4>
+          <p>Short description of the project.</p>
+          <div class="tags"><span>Tech</span><span>Tech</span></div>
+        </div>
+        <div class="card">
+          <div class="card-top"><span class="badge">GitHub</span><a href="#">↗</a></div>
+          <h4>Project Name</h4>
+          <p>Short description of the project.</p>
+          <div class="tags"><span>Tech</span><span>Tech</span></div>
+        </div>
+        <div class="card">
+          <div class="card-top"><span class="badge">In Development</span><a href="#">↗</a></div>
+          <h4>Project Name</h4>
+          <p>Short description of the project.</p>
+          <div class="tags"><span>Tech</span><span>Tech</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Contact -->
+    <section id="contact" class="contact">
+      <h3 class="section-title"><span>04</span> Contact</h3>
+      <p>A short message inviting people to reach out.</p>
+      <a href="mailto:you@example.com" class="btn">Send Message</a>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Your Name</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
