@@ -1,4 +1,4 @@
-// 모바일 메뉴 열기/닫기
+// Mobile menu toggle
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
@@ -7,7 +7,7 @@ navLinks.querySelectorAll("a").forEach((a) =>
   a.addEventListener("click", () => navLinks.classList.remove("open"))
 );
 
-// Experience 탭 전환
+// Experience tabs
 const tabs = document.querySelectorAll(".tab");
 const panels = document.querySelectorAll(".panel");
 
@@ -20,5 +20,5 @@ tabs.forEach((tab) => {
   });
 });
 
-// 푸터 연도 자동 표시
+// Footer year update
 document.getElementById("year").textContent = new Date().getFullYear();

@@ -19,7 +19,7 @@ body {
 
 a { color: var(--accent); text-decoration: none; }
 
-/* 네비게이션 */
+/* Navigation */
 .nav {
   position: fixed; top: 0; left: 0; right: 0;
   display: flex; justify-content: space-between; align-items: center;
@@ -32,14 +32,14 @@ a { color: var(--accent); text-decoration: none; }
 .nav nav a:hover { color: var(--accent); }
 .menu-btn { display: none; background: none; border: none; color: var(--title); font-size: 24px; }
 
-/* 공통 섹션 */
+/* Common Sections */
 main { max-width: 900px; margin: 0 auto; padding: 0 24px; }
 section { padding: 100px 0; }
 .section-title { font-size: 28px; color: var(--title); margin-bottom: 32px; }
 .section-title span { color: var(--accent); font-size: 18px; margin-right: 8px; }
 h4 { color: var(--title); margin: 16px 0 8px; }
 
-/* 히어로 */
+/* hero */
 .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
 .hero h1 { font-size: 64px; color: var(--title); }
 .hero h2 { font-size: 32px; color: var(--accent); }
@@ -61,7 +61,7 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 .skills, .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .skills span { background: var(--card); padding: 6px 12px; border-radius: 6px; }
 
-/* Experience 탭 */
+/* Experience tabs */
 .exp { display: flex; gap: 24px; }
 .tabs { display: flex; flex-direction: column; min-width: 150px; }
 .tab {
@@ -75,7 +75,7 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 .date { font-size: 14px; margin-bottom: 12px; }
 .panel ul { padding-left: 20px; }
 
-/* Projects 카드 */
+/* Projects cards */
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
 .card { background: var(--card); padding: 24px; border-radius: 10px; transition: transform 0.2s; }
 .card:hover { transform: translateY(-5px); }
