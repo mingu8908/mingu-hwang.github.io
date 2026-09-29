@@ -55,7 +55,8 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 .about { display: flex; gap: 32px; align-items: center; }
 .photo {
   flex-shrink: 0; width: 200px; height: 200px;
-  border-radius: 50%; overflow: hidden;
+  /* border-radius: 50%;  */
+  overflow: hidden;
   border: 1px solid #e5e7eb;
 }
 .photo img{
