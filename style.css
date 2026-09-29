@@ -54,16 +54,12 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 /* About */
 .about { display: flex; gap: 32px; align-items: center; }
 .photo {
-  flex-shrink: 0; width: 200px; height: 200px;
-  /* border-radius: 50%;  */
-  overflow: hidden;
+  flex-shrink: 0; width: 200px;
   border: 1px solid #e5e7eb;
 }
 .photo img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
+  display: block;
+  width: 100%; height: auto;
 }
 .about + h4 { margin-top: 40px; }
 
