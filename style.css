@@ -116,8 +116,12 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 .contact { text-align: center; }
 .contact p { margin-bottom: 24px; }
 .contact-links {
-  display: flex; justify-content: center; flex-wrap: wrap; 
+  display: inline-flex; flex-wrap: wrap; justify-content: center;
   gap: 32px; margin-bottom: 32px;
+  padding: 20px 32px;
+  background: var(--card);
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
 }
 .contact-links a {
   display: inline-flex; align-items: center; gap: 8px;
