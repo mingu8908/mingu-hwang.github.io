@@ -116,8 +116,9 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 .contact { text-align: center; }
 .contact p { margin-bottom: 24px; }
 .contact-links {
-  display: inline-flex; flex-wrap: wrap; justify-content: center;
-  gap: 32px; margin-bottom: 32px;
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 32px; margin: 0 auto 32px;
+  width: fit-content;
   padding: 20px 32px;
   background: var(--card);
   border: 1px solid #e5e7eb;
@@ -131,7 +132,7 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 .contact-links img { width: 22px; height: 22px; }
 footer { text-align: center; padding: 24px; font-size: 14px; }
 
-/* 모바일 */
+/* Mobile */
 @media (max-width: 700px) {
   .nav { padding: 16px 20px; }
   .menu-btn { display: block; }
