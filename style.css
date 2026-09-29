@@ -45,9 +45,12 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 .hero h2 { font-size: 32px; color: var(--accent); }
 .buttons { margin-top: 24px; display: flex; gap: 12px; }
 .btn {
-  display: inline-block; padding: 12px 24px;
+  display: inline-flex; 
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
   background: var(--accent); color: var(--bg);
-  border-radius: 6px; font-weight: bold;
+  border-radius: 999px; font-weight: bold;
 }
 .btn-outline { background: none; border: 1px solid var(--accent); color: var(--accent); }
 
