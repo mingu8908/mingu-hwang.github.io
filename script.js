@@ -26,3 +26,5 @@ function type() {
   setTimeout(type, delay);
 }
 type();
+
+// update check
