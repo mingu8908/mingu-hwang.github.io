@@ -205,5 +205,4 @@ footer { text-align: center; padding: 24px; font-size: 14px; }
   .hero h1 { font-size: 40px; }
   .hero { flex-direction: column-reverse; padding-top: 100px; }
   .hero-photo { width: 240px; }
-  .about { flex-direction: column; }
 }
