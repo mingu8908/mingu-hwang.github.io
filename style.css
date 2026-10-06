@@ -76,19 +76,25 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 .btn-light { background: var(--card); color: var(--title); }
 
 /* About */
-.about { display: flex; gap: 32px; align-items: center; }
-.photo {
-  flex-shrink: 0; width: 200px;
-  border: 1px solid #e5e7eb;
-}
-.photo img{
-  display: block;
-  width: 100%; height: auto;
-}
-.about + h4 { margin-top: 40px; }
+.about { max-width: 820px; }
+.about p { margin-bottom: 14px; font-size: 17px; }
+.about + h4 { margin-top: 40px; margin-bottom: 16px;}
 
-.skills, .tags { display: flex; flex-wrap: wrap; gap: 8px; }
-.skills span { background: var(--card); padding: 6px 12px; border-radius: 6px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-groups { display: grid; gap: 22px; }
+.skill-group h5 {
+  font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+  text-transform: uppercase; color: #6b7280; margin-bottom: 10px;
+}
+.skills { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.skills li {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--card); padding: 7px 14px; border-radius: 8px;
+  font-size: 14px; transition: background 0.2s, transform 0.2s;
+}
+.skills li:hover { background: #e5e7eb; transform: translateY(-2px); }
+.skills img, .skills svg { width: 20px; height: 20px; flex-shrink: 0; }
+.skills svg { color: var(--accent); }
 
 /* Experience tabs */
 .exp-list {
