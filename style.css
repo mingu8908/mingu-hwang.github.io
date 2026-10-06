@@ -102,49 +102,35 @@ h4 { color: var(--title); margin: 16px 0 8px; }
 /* Experience tabs */
 .exp-list {
   list-style: none;
-  margin: 48px 0 0;
-  padding: 0 0 0 32px;
+  margin: 40px 0 0;
+  padding: 0 0 0 36px;
   border-left: 2px solid #e5e7eb;
+  margin-left: 26px;
 }
-
-.exp-item {
-  position: relative;
-  padding-bottom: 48px;
-}
+.exp-item { position: relative; padding-bottom: 28px; }
 .exp-item:last-child { padding-bottom: 0; }
 
-.exp-item::before {
-  content: "";
-  position: absolute;
-  left: -40px;
-  top: 8px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #fff;
-  border: 3px solid var(--accent);
+.exp-card {
+  background: var(--bg);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+.exp-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
 
-.exp-item h3 {
-  color: var(--title);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.exp-item h3 a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
+.exp-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.exp-item h3 { color: var(--title); font-size: 1.25rem; font-weight: 700; }
+.exp-item h3 a { color: var(--title); text-decoration: none; }
+.exp-item h3 a:hover { color: var(--accent); }
+.exp-role { color: var(--accent); font-weight: 600; font-size: 15px; }
 .exp-date {
-  margin: 12px 0 16px;
-  color: #444;
+  flex-shrink: 0; font-size: 13px; color: #6b7280;
+  background: var(--card); padding: 4px 10px; border-radius: 999px;
 }
-
-.exp-item ul {
-  margin: 0;
-  padding-left: 20px;
-  line-height: 1.7;
-}
+.exp-item ul { margin: 0 0 14px; padding-left: 20px; line-height: 1.7; }
+.exp-item li::marker { color: var(--accent); }
+.exp-item strong { color: var(--title); font-weight: 600; }
 
 /* Projects cards */
 .cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
@@ -208,4 +194,5 @@ footer { text-align: center; padding: 24px; font-size: 14px; }
   .hero h1 { font-size: 40px; }
   .hero { flex-direction: column-reverse; padding-top: 100px; }
   .hero-photo { width: 240px; }
+  .exp-head { flex-direction: column; }
 }
