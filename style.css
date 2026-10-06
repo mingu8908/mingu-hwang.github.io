@@ -27,7 +27,12 @@ a { color: var(--accent); text-decoration: none; }
   background: rgba(255, 255, 255, 0.9);
   z-index: 10;
 }
-.logo { font-weight: bold; font-size: 20px; }
+.logo {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 700; font-size: 18px; color: var(--title);
+}
+.logo-bracket { color: var(--accent); }
+.logo:hover .logo-bracket { opacity: 0.6; }
 .nav nav a { margin-left: 24px; color: var(--title); }
 .nav nav a:hover { color: var(--accent); }
 .menu-btn { display: none; background: none; border: none; color: var(--title); font-size: 24px; }
