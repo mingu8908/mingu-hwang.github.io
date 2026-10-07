@@ -38,3 +38,15 @@ const sectionObserver = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: "-45% 0px -50% 0px" });
 document.querySelectorAll("section[id]").forEach((s) => sectionObserver.observe(s));
+
+// Scroll progress bar
+const progressBar = document.getElementById("progressBar");
+window.addEventListener("scroll", () => {
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = (window.scrollY / max) * 100 + "%";
+});
+
+// Time-of-day greeting
+const hour = new Date().getHours();
+const greeting = hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
+document.getElementById("greeting").textContent = greeting;
